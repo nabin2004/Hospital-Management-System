@@ -47,8 +47,35 @@ This programming assignment is to apply the programming principles covered in tu
 
 There are mainly two reasons behind the selection of the hospital management system as the topic of this coursework. Firstly, the students are familiar with this system; hence, students will spend less time and effort to understand the function specification of the software they will be developing for this coursework. Hence, most of their time will be devoted to the design, development, and testing of the system by applying the programming knowledge and skills they learned throughout this module. Secondly, GUI-based programs make it easier to interact with the developed system and demonstrate a direct relationship between the user interaction and the system functions and data. Also, students will learn about how a product works entirely from the user's (or customer's) perspective and not just from a developer perspective. Hence, they will need to develop a user-friendly GUI.
 
-#### Objective - Sample prototype application
+## Hospital Management System
 
-The objective of this assessment is to develop a Python software that implements a core hospital management solution that is used in hospitals by its patients and hospital admins. A partial implementation of a prototype system will be developed during the practical sessions in the PC labs. This prototype will be developed to include basic system functionalities such as book an appointment and display patients' data by doctors. The main class will allow adding a number
+The Hospital Management System is a Python software that aims to implement a core hospital management solution used by patients and hospital administrators. The system allows patients to book appointments and administrators to manage doctors, patients, and appointments.
+
+### Objective
+
+The objective of this assessment is to develop a Python software that implements a prototype hospital management system. The initial prototype will include basic functionalities such as booking appointments and displaying patient data by doctors. The system will have an Admin role, while Doctors and Patients will act as data storage instances.
+
+### Assessment Specifications
+
+The assessment is divided into four levels, each with specific requirements and corresponding marks:
+
+1. **System Development (up to 40%)**: Implement the provided classes and functions for Admin, Doctor, and Patient. Develop functionalities such as Admin Login, Register/View/Update/Delete Doctor, View Patient, Assign Doctor to Patient, View Doctor's Patient Details, View Doctor's Appointments, Apply to be Admitted, Book Appointment, View Assigned Doctor, and Check Appointment Status.
+
+2. **System Development (41% - 50%)**: Add functionalities for Admins to discharge patients, view discharged patient list, and update their own information.
+
+3. **System Development (51% - 70%)**: Enhance the system by including patient details such as name, symptoms, age, mobile, and address. Group patients of the same family together. Implement data storage using file handling to load and store patient data.
+
+4. **System Development (71% - 80%)**: Enable the relocation of patients from one doctor to another. Implement a management report feature for Admins, displaying the total number of doctors, patients per doctor, appointments per month per doctor, and patients based on illness type. Optionally, provide diagrams for the reports. Develop a suitable Graphical User Interface (GUI) for all system functions.
+
+### Testing and Evaluation
+
+Software testing is an essential part of the development process. In this part of the assessment, you need to develop a test plan that includes test cases based on the system design and implementation of the Hospital Management System. Here are the requirements for this section:
+
+- Develop around 10 unique and valid test cases for your system.
+- Perform White Box Testing (Clear Box Testing) by examining the code's structure and ensuring internal methods and operations perform according to the specifications.
+- Choose inputs that exercise different paths through the code and determine the expected outputs.
+- Submit test tables in PDF format.
+
+
 
 .
