@@ -1,35 +1,54 @@
-# Hospital-Management-System
+# Design, Development, and Testing of a Computer Programme Solution
 
-Hospital-Management-System is a web-based project aimed at providing a comprehensive and efficient solution for managing hospital activities. It is designed to provide various features that will streamline the day-to-day activities of hospitals, clinics, and other medical facilities. The project is developed using PHP, MySQL, and Bootstrap frameworks.
+## Part A – Design documentation (weight 10%)
 
-Features:
+### Overview of hospital management systems
 
-The Hospital-Management-System project comes with several features to help healthcare facilities manage their operations more effectively. Some of the key features include:
+In this coursework, students will create a 'prototype' Hospital Management system. This system aims to maintain the medical records of the patient, maintain the contact details of the patient, and keep track of the appointment dates. There are three different types of users involved in a hospital management system: admin, doctor, and patient. Each of the above plays an important role in the hospital management system performing different tasks. Patients using the system can book online appointments. Their appointments are approved by the admin that also assigns a doctor to them.
 
-    Patient Management: The system allows users to register patients and maintain their medical records, including diagnosis, prescriptions, and test results. This feature also enables doctors to access patient data and make informed decisions.
+### Flowchart 1: Admin Log-in Process
 
-    Appointment Management: With this feature, patients can book appointments with doctors online, and doctors can schedule appointments according to their availability. The system also sends automatic reminders to patients before their appointments.
+```mermaid
+graph TD
+A(Start) --> B{Admin log-in process}
+B -->|Invalid credentials| C[Display error message]
+B -->|Valid credentials| D[Redirect to admin dashboard]
+D --> E[End]
+C --> E
+```
 
-    Staff Management: This feature allows healthcare facilities to manage their staff, including doctors, nurses, and other employees. It enables administrators to monitor employee performance, track attendance, and manage payroll.
+### Flowchart 2: Admin Approving an Appointment
 
-    Inventory Management: The system helps hospitals manage their inventory, including medicines, medical equipment, and supplies. It enables administrators to monitor stock levels, track usage, and reorder items as needed.
+```mermaid
+graph TD
+A(Start) --> B{Admin approves appointment}
+B -->|Appointment approved| C[Assign a doctor]
+C --> D[Inform patient and doctor]
+D --> E[End]
+B -->|Appointment not approved| F[Inform patient]
+F --> E
+```
 
-    Billing and Invoicing: The system generates bills and invoices for patients and enables healthcare facilities to track payments and outstanding balances.
+## Part B – System development (weight 30%)
 
-Installation:
+### Important:
 
-To install and run the Hospital-Management-System project, follow these steps:
+This part of the assessment should not be attempted by students until you are provided with the partial implementation code which you must use as a starting point of your system, and this will be provided to you around Week 8 of this semester.
 
-    Clone the repository from GitHub.
+Developing your hospital management system from scratch is not acceptable for this assessment, and may lead to losing a substantial amount of marks.
 
-    Install the required dependencies using Composer.
+It is critical to use Python 3.6 or a higher version of Python and "Spyder" IDE to ensure that your submission runs correctly when marked by your tutor.
 
-    Create a MySQL database and import the database schema using the provided SQL file.
+### Description:
 
-    Configure the database connection settings in the configuration file.
+#### Rationale
 
-    Start the server and navigate to the project URL in your web browser.
+This programming assignment is to apply the programming principles covered in tutorials and lectures to develop a Python software that implements a core hospital management solution that is used by its patients and staff members. The software can be fully implemented using a text-based interface; however, to achieve higher marks, a GUI-based software can be developed using the Python GUI Programming module namely Tkinter. GUI design and Tkinter programming will be covered during week 10. The aim of the exercises is to enhance a student's experience of programming by applying programming principles to a larger problem of developing a complete application.
 
-Conclusion:
+There are mainly two reasons behind the selection of the hospital management system as the topic of this coursework. Firstly, the students are familiar with this system; hence, students will spend less time and effort to understand the function specification of the software they will be developing for this coursework. Hence, most of their time will be devoted to the design, development, and testing of the system by applying the programming knowledge and skills they learned throughout this module. Secondly, GUI-based programs make it easier to interact with the developed system and demonstrate a direct relationship between the user interaction and the system functions and data. Also, students will learn about how a product works entirely from the user's (or customer's) perspective and not just from a developer perspective. Hence, they will need to develop a user-friendly GUI.
 
-The Hospital-Management-System project is a comprehensive solution for healthcare facilities that require an efficient system to manage their operations. With its user-friendly interface and essential features, the system enables healthcare facilities to provide better patient care and streamline their administrative processes.
+#### Objective - Sample prototype application
+
+The objective of this assessment is to develop a Python software that implements a core hospital management solution that is used in hospitals by its patients and hospital admins. A partial implementation of a prototype system will be developed during the practical sessions in the PC labs. This prototype will be developed to include basic system functionalities such as book an appointment and display patients' data by doctors. The main class will allow adding a number
+
+.
