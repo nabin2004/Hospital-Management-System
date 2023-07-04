@@ -1,0 +1,5 @@
+username, password, address
+admin, password, B1 1AB
+admin1,password1, address1
+admin2,password2,address2
+admin3,password3,address3

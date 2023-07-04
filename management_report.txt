@@ -1,0 +1,3 @@
+Patient ID:  PAT25   || Full Name:  Johndsichage Smith  || Doctors:                      || Age: 30  || Mobile:  1234567890  || Postcode:  12345  
+Patient ID:  PAT26   || Full Name:    Janedsicha Doe    || Doctors:                      || Age: 25  || Mobile:  9876543210  || Postcode:  54321  
+Patient ID:  PAT27   || Full Name: Michaeldischarge Johnson || Doctors:                      || Age: 40  || Mobile:  5555555555  || Postcode:  67890  
