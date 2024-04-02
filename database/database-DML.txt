@@ -1,0 +1,62 @@
+Table Admin {
+  admin_id int [pk]
+  user_name varchar
+  first_name varchar
+  last_name varchar
+  email varchar
+  password varchar [note: "Stored securely with encryption"]
+}
+
+Table Appointment {
+  appointment_id int [pk]
+  doctor_id int [ref: > Doctor.doctor_id]
+  patient_id int [ref: > Patient.patient_id]
+  slot datetime
+}
+
+Table Doctor {
+  doctor_id int [pk]
+  time_slots timestamp
+  specialization varchar
+  experience int
+  contact_phone varchar
+  address varchar
+  education varchar
+  graduate_year int
+}
+
+Table Discharge {
+  discharge_id int [pk]
+  doctor_id int [ref: > Doctor.doctor_id]
+  patient_id int [ref: > Patient.patient_id]
+  discharge_time datetime
+}
+
+Table Prescription {
+  prescription_id int [pk]
+  doctor_id int [ref: > Doctor.doctor_id]
+  prescribe_date datetime
+  notes text
+  patient_id int [ref: > Patient.patient_id]
+}
+
+Table Patient {
+  patient_id int [pk]
+  first_name varchar
+  last_name varchar
+  birthdate date
+  address varchar
+  admitted bool
+  admit_time datetime
+  discharge datetime
+  phone_number varchar
+}
+
+Table Pharmacy {
+  pharmacy_id int [pk]
+  pharmacy_name varchar
+  address varchar
+  contact_phone varchar
+  prescription_id int [ref: > Prescription.prescription_id]
+  patient_id int [ref: > Patient.patient_id]
+}
