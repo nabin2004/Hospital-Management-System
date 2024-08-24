@@ -14,8 +14,4 @@ Welcome to the official documentation for the Hospital Management System (HMS). 
    :maxdepth: 2
    :caption: Contents:
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
    models
