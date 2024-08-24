@@ -1,0 +1,17 @@
+.. Hospital Management System documentation master file, created by
+   sphinx-quickstart on Sat Aug 24 09:57:50 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Hospital Management System documentation
+===================================================
+Welcome to the official documentation for the Hospital Management System (HMS). This comprehensive guide is designed to provide users, developers, and administrators with the necessary information to effectively utilize and understand the features and functionality of our HMS. The Hospital Management System is an integrated solution designed to streamline and automate the various operations within a healthcare facility. It encompasses a range of functionalities, including patient management, staff scheduling, billing, and inventory control. Our system aims to improve the efficiency of hospital operations, enhance the quality of patient care, and provide a seamless experience for both users and administrators.  
+
+.. note::
+   This documentation is a work in progress and will be updated regularly to provide the most up-to-date information on the Hospital Management System.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   models
